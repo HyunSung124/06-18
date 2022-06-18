@@ -1,0 +1,137 @@
+# a = ('hello python')
+# print(a.capitalize())#0번째 문자가 대문자로 변경된다.
+# print(a.startswith('el'))#해당 문자로 시작하는지를 물어본다. True/Fales 반환
+# print(a.endswith('hon'))#해당 문자로 끝나는지를 물어본다. True/False 반환
+# print(a.is~)#is로 시작하는 함수들은 물어보는 함수 = TRue/False를 반환
+#a.isalnum() = a라는 문자가 알파벳 또는 숫자인지를 물어본다.
+# a = '123'
+# print(a.isalpha())# a라는 문자가 알파벳인지를 물어본다.
+# print(a.isdigit())#a라는 문자가 숫자로 이루어져 있는지 물어본다.
+
+# a = [1,2,3,[4,5],6]
+# print(a[3][0])#인덱싱
+# print(a[:3])#슬라이싱
+#3->7
+# a[2] = 7
+# #[4,5]삭제
+# del a[3]
+# b=[7,8,9]
+# print(a+b)
+# print(b*3)
+# print(a)
+# a = [4,1,2,3]
+# b = [5,6,7]
+# a.extend(b)#확장/ 추가x
+# print(a)
+# a = (1,)
+# print(a,type(a))
+
+# d = {1: "사과",2: '바나나',3: "멜론"}
+# #수정
+# d[1] = '레몬'
+
+#집합 = 중복된 값이 없는 자료형
+# s1 = set([1])
+# s2 = set([1, 2])
+# s3 = set([3, 4])
+# #합집합 구하기
+#print(s1| s2, s2 - s3)
+#교집합 구하기
+# print(s1 & s2, s2 & s3)
+# a = [1,2,1,1,4,2,1,2,3,4,1,2,3,4]
+# b = set(a)
+# print(a)
+
+# if not True
+# if True
+# if 1>2 and 2>1:#and는 두개의 조건이 모두 함일경우 참이다.
+#     print(1)   #or은 두개의 조건중 하나라도 참이면 결과는 참이다.
+# else:
+#     print(2)
+
+# while문 = 조건이 참인동안 반복
+#
+# for문 = 몇회 반복(반복횟수를 알떄 사용)
+# for i in range(1,11):
+# #     if i% 2 == 0:
+# #         continue
+# #     if i == 7:
+# #         break
+# #     print(i)
+
+#함수
+#1부터 10까지 출력을 10번 반복해라
+# def one_to_ten():
+#     for i in range(1,11):
+#         print(i,end = ' ')
+#     print()
+
+
+# def return_hi():
+#     return "hi"
+# print(return_hi())
+#
+#
+# def print_sum(a,b):
+#     print(a+b)
+#
+# print(print_sum(5,6))
+
+# def sum(*args):
+#     for i in args:
+#         print(i)
+# sum(1,2,3,4,5,6,7,8,9)
+
+
+# 매게 변수의 초기값을 설정해줄 수 있다.
+# def say_myself(name, age,man = True):
+#     print("나의 이름은 %s 입니다" % name)
+#     print("나의 나이는 %d살 입니다" % age)
+#     if man:
+#         print("남자입니다")
+#     else:
+#         print("여자입니다")
+#
+#
+# say_myself("임현성",13)
+
+
+
+#함수의 결과값(반환값)의 개수는 무조건 1개이다.
+# def sum_mul(a,b):
+#     return a+b, a*b, a-b, a// b, a%b
+# print(sum_mul(3,4))
+
+
+# a = 1
+# def vartest():
+#   a = 2       #함수 내에서 사용된 변수 = 지역변수
+#   return a
+#
+# vartest()
+# print(a)
+
+
+# a = {0: "zero",1: 'one', 2: 'two',3: 'three',4: 'four',5: 'five', 6: 'six',7: 'seven',8: 'eight',9: 'nine'}
+
+
+
+
+# def solution(s):
+#     nums = {'zero': '0','one':'1','two':'2','three':'3','four':'4','five':'5',
+#             'six':'6','seven':'7','eight':'8','nine':'9'}
+#
+#     for key,value in nums.items():
+#         if key in s:
+#             s = s.replace(key,value)
+#     return int(s)
+#
+# s = "23four5six7"
+# print(solution(s))
+
+
+
+a = input()
+a = a.lower()
+
+print(a.startswith('.')) #4
